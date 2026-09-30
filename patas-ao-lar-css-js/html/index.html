@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="ONG Patas ao Lar - adoção responsável de cães e gatos."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <title>Patas ao Lar</title>
+</head>
+
+<body data-page="spa">
+
+    <header>
+
+        <h1>Patas ao Lar</h1>
+
+        <p>
+            Uma nova chance para quem só precisa de amor.
+        </p>
+
+        <nav
+            class="navegacao-principal"
+            aria-label="Navegação principal"
+        >
+
+            <button
+                class="menu-hamburguer"
+                type="button"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+
+                <span class="somente-leitor">
+                    Abrir menu
+                </span>
+
+            </button>
+
+
+            <ul
+                id="menu-principal"
+                class="menu-principal"
+            >
+
+                <li>
+                    <a
+                        href="#/inicio"
+                        data-link
+                    >
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="#/quem-somos"
+                        data-link
+                    >
+                        Quem Somos
+                    </a>
+                </li>
+
+                <li class="tem-submenu">
+
+                    <button
+                        type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="submenu-projetos"
+                    >
+                        Projetos ▾
+                    </button>
+
+                    <ul
+                        id="submenu-projetos"
+                        class="submenu"
+                    >
+
+                        <li>
+                            <a
+                                href="#/adocao"
+                                data-link
+                            >
+                                Animais para Adoção
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#/como-ajudar"
+                                data-link
+                            >
+                                Como Ajudar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a
+                                href="#/contato"
+                                data-link
+                            >
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a
+                        href="#/cadastro"
+                        data-link
+                    >
+                        Cadastro
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main
+        id="app"
+        aria-live="polite"
+    >
+        <!-- Conteúdo inserido pelo router.js -->
+    </main>
+
+
+    <footer>
+
+        <p>
+            Patas ao Lar - Adoção de Cães e Gatos
+        </p>
+
+        <p>
+            ONG fictícia desenvolvida para projeto acadêmico.
+        </p>
+
+        <p>
+            &copy; 2026 Patas ao Lar -
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- Day.js -->
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"
+    ></script>
+
+
+    <!-- Entrada principal -->
+
+    <script
+        type="module"
+        src="../js/app.js"
+    ></script>
+
+</body>
+
+</html>

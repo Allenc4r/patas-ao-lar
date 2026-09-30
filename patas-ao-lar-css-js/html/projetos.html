@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Projetos da ONG Patas ao Lar."
+    >
+
+    <link
+        rel="stylesheet"
+        href="../css/style.css"
+    >
+
+    <title>Projetos - Patas ao Lar</title>
+</head>
+
+<body data-page="projetos">
+
+    <header>
+
+        <h1>Patas ao Lar</h1>
+
+        <p>
+            Uma nova chance para quem só precisa de amor.
+        </p>
+
+
+        <nav
+            class="navegacao-principal"
+            aria-label="Navegação principal"
+        >
+
+            <button
+                class="menu-hamburguer"
+                type="button"
+                aria-expanded="false"
+                aria-controls="menu-principal"
+            >
+
+                <span class="barra"></span>
+                <span class="barra"></span>
+                <span class="barra"></span>
+
+                <span class="somente-leitor">
+                    Abrir menu
+                </span>
+
+            </button>
+
+
+            <ul
+                id="menu-principal"
+                class="menu-principal"
+            >
+
+                <li>
+                    <a href="index.html#/inicio">
+                        Início
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#/quem-somos">
+                        Quem Somos
+                    </a>
+                </li>
+
+                <li class="tem-submenu">
+
+                    <button
+                        type="button"
+                        class="submenu-toggle"
+                        aria-expanded="false"
+                        aria-controls="submenu-projetos"
+                    >
+                        Projetos ▾
+                    </button>
+
+                    <ul
+                        id="submenu-projetos"
+                        class="submenu"
+                    >
+
+                        <li>
+                            <a
+                                href="#adocao"
+                                aria-current="page"
+                            >
+                                Animais para Adoção
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#como-ajudar">
+                                Como Ajudar
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#contato">
+                                Contato
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+                <li>
+                    <a href="cadastro.html">
+                        Cadastro
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-estatica">
+
+        <!-- =================================
+             ADOÇÃO
+        ================================== -->
+
+        <section id="adocao">
+
+            <h2>
+                Animais para Adoção
+            </h2>
+
+            <p>
+                Conheça alguns dos nossos amigos que
+                estão procurando um novo lar.
+            </p>
+
+
+            <div
+                id="lista-animais"
+                class="lista-animais"
+                aria-live="polite"
+            ></div>
+
+
+            <section
+                class="historico-adocoes"
+                aria-labelledby="titulo-historico"
+            >
+
+                <h3 id="titulo-historico">
+                    Histórico de interesses
+                </h3>
+
+                <p>
+                    Os interesses registrados neste
+                    navegador permanecem disponíveis
+                    mesmo após fechar a página.
+                </p>
+
+                <ul
+                    id="lista-interesses"
+                    class="lista-interesses"
+                ></ul>
+
+            </section>
+
+
+            <dialog
+                id="modal-adocao"
+                class="modal-feedback"
+                aria-labelledby="titulo-modal"
+            >
+
+                <div class="conteudo-modal">
+
+                    <h2 id="titulo-modal">
+                        Interesse em adoção
+                    </h2>
+
+                    <p id="mensagem-modal">
+                        Você deseja iniciar o processo
+                        de adoção?
+                    </p>
+
+                    <div class="acoes-modal">
+
+                        <button
+                            type="button"
+                            id="confirmar-adocao"
+                        >
+                            Confirmar interesse
+                        </button>
+
+                        <button
+                            type="button"
+                            id="fechar-modal"
+                            class="botao-secundario"
+                        >
+                            Cancelar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </dialog>
+
+
+            <div
+                id="toast-adocao"
+                class="toast toast-sucesso"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+            >
+                Interesse registrado com sucesso!
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             COMO AJUDAR
+        ================================== -->
+
+        <section id="como-ajudar">
+
+            <h2>
+                Como Ajudar
+            </h2>
+
+            <p>
+                Existem diferentes maneiras de contribuir
+                com o trabalho realizado pela ONG
+                Patas ao Lar.
+            </p>
+
+
+            <article>
+
+                <h3>
+                    Doações
+                </h3>
+
+                <span class="badge badge-info">
+                    Apoie nossa causa
+                </span>
+
+                <p>
+                    As doações são fundamentais para
+                    garantir alimentação, medicamentos
+                    e atendimento aos animais.
+                </p>
+
+                <ul>
+                    <li>Doação de ração.</li>
+                    <li>Doação de medicamentos.</li>
+                    <li>Materiais de higiene.</li>
+                    <li>Produtos para os animais.</li>
+                    <li>Contribuições financeiras.</li>
+                </ul>
+
+            </article>
+
+
+            <article>
+
+                <h3>
+                    Voluntariado
+                </h3>
+
+                <span class="badge badge-info">
+                    Seja voluntário
+                </span>
+
+                <p>
+                    Os voluntários possuem papel fundamental
+                    no funcionamento da Patas ao Lar.
+                </p>
+
+                <ul>
+                    <li>Auxiliar nos cuidados dos animais.</li>
+                    <li>Participar de feiras de adoção.</li>
+                    <li>Divulgar animais disponíveis.</li>
+                    <li>Ajudar em campanhas.</li>
+                    <li>Oferecer lar temporário.</li>
+                </ul>
+
+            </article>
+
+        </section>
+
+
+        <!-- =================================
+             CONTATO
+        ================================== -->
+
+        <section id="contato">
+
+            <h2>
+                Entre em Contato
+            </h2>
+
+            <p>
+                Ficou interessado em adotar,
+                realizar uma doação ou participar
+                como voluntário?
+            </p>
+
+            <address>
+
+                <p>
+                    <strong>E-mail:</strong>
+
+                    <a href="mailto:contato@patasaolar.org">
+                        contato@patasaolar.org
+                    </a>
+                </p>
+
+                <p>
+                    <strong>Telefone:</strong>
+
+                    <a href="tel:+5583999999999">
+                        (83) 99999-9999
+                    </a>
+                </p>
+
+            </address>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            Patas ao Lar - Adoção de Cães e Gatos
+        </p>
+
+        <p>
+            ONG fictícia desenvolvida para projeto acadêmico.
+        </p>
+
+        <p>
+            &copy; 2026 Patas ao Lar -
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"
+    ></script>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"
+    ></script>
+
+    <script
+        type="module"
+        src="../js/app.js"
+    ></script>
+
+</body>
+
+</html>
